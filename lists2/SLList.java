@@ -57,6 +57,17 @@ public class SLList {
 
  		p.next = new IntNode(x, null);
  	}
+
+ 	public void deleteFirst(){
+ 		sentinel.next = sentinel.next.item.next;
+
+ 	}
+
+ 	public void addArray(int[] arr){
+ 		for (int i = arr.length; i > 0; i--){
+ 			addFirst(arr[i]);
+ 		}
+ 	}
  	
  	/** Returns the size of the list. */
  	public int size() {
@@ -69,4 +80,6 @@ public class SLList {
  		L.addLast(20);
  		System.out.println(L.size());
  	}
+ 		}
+ 		}
 }
